@@ -1,0 +1,26 @@
+{
+  "name": "hummingbird-erp",
+  "version": "3.0.0",
+  "description": "Hummingbird Clothing ERP — FujiSan Lanka Pvt Ltd",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build-win": "electron-builder --win",
+    "build-mac": "electron-builder --mac",
+    "build-linux": "electron-builder --linux"
+  },
+  "build": {
+    "appId": "lk.fujisan.hummingbird-erp",
+    "productName": "Hummingbird ERP",
+    "directories": { "output": "dist" },
+    "win": { "target": "nsis", "icon": "assets/icon.png" },
+    "mac": { "target": "dmg", "icon": "assets/icon.png" },
+    "linux": { "target": "AppImage" }
+  },
+  "devDependencies": {
+    "electron": "^29.0.0",
+    "electron-builder": "^24.0.0"
+  },
+  "author": "FujiSan Lanka Pvt Ltd",
+  "license": "UNLICENSED"
+}
